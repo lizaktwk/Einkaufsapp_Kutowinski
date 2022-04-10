@@ -1,0 +1,190 @@
+
+/*allgemein*/
+body {
+    background: rgb(71, 64, 64);
+}
+
+h1 {color: rgb(181, 160, 160);
+    font-family: 'Grape Nuts', cursive;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+h2 { color: rgb(161, 140, 140);
+    font-family: 'Grape Nuts';
+    font-family: 'IBM Plex Sans Arabic', serif;
+}
+
+.kopfzeile {
+    position: relative;
+    left: -3%;
+    background-color: rgb(71, 64, 64);
+    width: 90%;
+    padding: 5px;
+    margin: 10px;
+}
+
+
+p { color: whitesmoke;
+    font-family: 'Grape Nuts', cursive;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-family: 'Karla', sans-serif;
+    
+}
+
+.p-position {
+    position: relative;
+    background-color: rgb(71, 64, 64);
+    width: 90%;
+    padding: 5px;
+    margin: 0px;
+}
+
+
+form label { color: whitesmoke;
+    font-family: 'Grape Nuts', cursive;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-family: 'Karla', sans-serif;
+}
+
+input {
+    background: rgb(71, 64, 64);
+    color: whitesmoke;
+    font-family: 'Grape Nuts', cursive;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-family: 'Karla', sans-serif;
+    font-size: 12pt;
+}
+
+/*Startseite*/
+.rotate-img {
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);
+    width: fit-content;    
+}
+#img-position {
+    max-width: 100%;
+    height: auto;
+    position: left;
+}
+
+#kat:visited {
+    color: pink;
+}
+
+#kat {
+    color: whitesmoke;
+    font-family: 'Grape Nuts', cursive;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-family: 'Karla', sans-serif;
+    font-style: italic;
+}
+
+#kategorien::first-letter {
+    font-size: larger;
+    font-weight: bolder;
+    color: rgb(201, 180, 180);
+    font-family: 'Grape Nuts', cursive;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-family: 'Karla', sans-serif;
+}
+
+ul li a {
+    color: whitesmoke;
+    font-family: 'Grape Nuts', cursive;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-family: 'Karla', sans-serif;
+}
+
+/*Nebenseiten*/
+.backToMain {
+    color: black;
+    font-family: 'Grape Nuts', cursive;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    width: fit-content;
+    background-color: rgb(161, 140, 140);
+    padding: 10px;
+    transition: background-color 0s, padding 0s ease;
+  }
+  
+  .backToMain:hover {
+    background: radial-gradient(rgb(140,120,120), rgb(255, 214, 221));
+    padding: 15px;
+  }
+
+
+/*Einzelne Rezepte*/
+ol li {
+    color: whitesmoke;
+    font-family: 'Grape Nuts', cursive;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-family: 'Karla', sans-serif;
+
+}
+.rezeptBild {
+    position: relative;
+    left: 5%;
+}
+#bestätigen:hover {
+    color: black;
+    font-weight: bold;
+    background: rgb(161, 140, 140);
+}
+
+.rezept-div {
+    background-color: rgb(71, 64, 64);
+    width: 90%;
+    border: 2px solid whitesmoke;
+    padding: 5px;
+    margin: 10px;
+    
+    color: whitesmoke;
+    font-family: 'Grape Nuts', cursive;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-family: 'Karla', sans-serif;
+}
+
+
+/* Buttons */
+.button-74 {
+      background-color: #fbe4e0;
+      border: 2px solid #383232;
+      border-radius: 20px;
+      box-shadow: #383332 4px 4px 0 0;
+      color: #383232;
+      cursor: pointer;
+      display: inline-block;
+      font-weight: 550;
+      font-size: 14px;
+      padding: 0 10px;
+      line-height: 25px;
+      text-align: center;
+      text-decoration: none;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+    
+    .button-74:hover {
+      background-color: #ffdbdb;
+    }
+    
+    .button-74:active {
+      box-shadow: #422800 2px 2px 0 0;
+      transform: translate(2px, 2px);
+    }
+    
+    @media (min-width: 768px) {
+      .button-74 {
+        min-width: 120px;
+        padding: 0 25px;
+      }
+    }
+   

@@ -6,31 +6,36 @@
     <meta name = "description" content="Einkaufsapp-Clone"/>
     <meta name = "author" content="Lisa Kutowinski"/>
     <title>Einkaufsliste Startseite</title>
+
+    <link rel="stylesheet" href="styles/main.css">
     
 </head>
 <body>
     <header> 
-        <a href="listen.html"> 
-            <button> Listen </button>
-        </a>
-        <a href="teilen.html"> 
-            <button> Teilen </button>
-        </a>
-        <a href="weiteres.html"> 
-            <button> Weiteres </button>
-        </a>
+        <a href="listen.html" class="button-74">Listen</a>
+        <a href="teilen.html" class="button-74">Teilen</a>
+        <a href="weiteres.html" class="button-74">Weiteres</a>
         
 
     </header>
 
     <main> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&family=IBM+Plex+Sans+Arabic:wght@200&family=Karla:wght@300&display=swap" rel="stylesheet">         
+
+
         <h1>Startseite</h1>
-        <img src="images/pexels-photo-7263016.jpeg" alt="Einkaufskorb" width="290" height="400"
-        <br>
-        <p> Hier hast du die Möglichkeit, Ordnung in deine Einkaufsplanung zu bringen. </p>
-        <p> Erstelle ganz einfach <em>verschiedene Einkaufslisten</em>, finde in den unten aufgelisteten <a href = "#Kategorien">Kategorien</a>
-         die Produkte, die du benötigst oder suche <strong> schnell und unkompliziert </strong> selbst nach einem bestimmten Produkt.
-        </p>
+        
+        <div id="img-position"> 
+            <img class = "rotate-img"  src="images/title.jpg" alt="Einkaufskorb" width="290" height="400">
+        
+        
+            <p> Hier hast du die Möglichkeit, Ordnung in deine Einkaufsplanung zu bringen. </p>
+            <p> Erstelle ganz einfach <em>verschiedene Einkaufslisten</em>, finde in den unten aufgelisteten <a id="kat" href = "#Kategorien">Kategorien</a>
+            die Produkte, die du benötigst oder suche <strong> schnell und unkompliziert </strong> selbst nach einem bestimmten Produkt.
+            </p>
+        </div>
         
         <form>
             
@@ -40,8 +45,8 @@
             
         </form>
 
-        <h2 id = "Kategorien"> Kategorien </h2>
-        <ul>
+        <h2 id = "kategorien"> Kategorien </h2>        
+        <ul> <!-- soll später Popup werden/Tree view(?)-->
             <li> <a href="" > Obst &amp; Gemüse </a> </li>
             <li> <a href="" > Brot &amp; Backwaren </a> </li>
             <li> <a href="" > Milch &amp; Käse </a> </li>
@@ -62,9 +67,7 @@
     </main>
 
     <footer> 
-        <a href="rezepte.html"> 
-            <button> Rezepte &amp; Inspirationen </button>
-        </a>
+        <a href="rezepte.html" class="button-74">Rezepte &amp; Inspirationen</a>
 
     </footer>
     
