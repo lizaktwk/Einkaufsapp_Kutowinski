@@ -1,6 +1,8 @@
 # Einkaufsapp_Kutowinski
 
-GIS Einkaufsapp Kutowinski Lisa MIB2
+GIS Einkaufsapp 
+Lisa Kutowinski MIB2
+Matrikelnumer: 269165
 
-Verweis auf den Root-Ordner:https://github.com/lizaktwk/Einkaufsapp
-Verweis auf eine GitHub-Page: 
+Verweis auf Root-Ordner:https://github.com/lizaktwk/Einkaufsapp
+
