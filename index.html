@@ -7,7 +7,8 @@
     <meta name = "author" content="Lisa Kutowinski"/>
     <title>Einkaufsliste Startseite</title>
 
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main.css"/>
+    <!-- <script src = "js/scripts.js"defer/> --> 
     
 </head>
 <body>
@@ -27,14 +28,17 @@
 
         <h1>Startseite</h1>
         
-        <div id="img-position"> 
-            <img class = "rotate-img"  src="images/title.jpg" alt="Einkaufskorb" width="290" height="400">
+        <div> 
+            <img class = "responsive-img"  src="images/title1.jpg" alt="easy shopping" >
         
         
-            <p> Hier hast du die Möglichkeit, Ordnung in deine Einkaufsplanung zu bringen. </p>
-            <p> Erstelle ganz einfach <em>verschiedene Einkaufslisten</em>, finde in den unten aufgelisteten <a id="kat" href = "#Kategorien">Kategorien</a>
-            die Produkte, die du benötigst oder suche <strong> schnell und unkompliziert </strong> selbst nach einem bestimmten Produkt.
+            <p  id="text-position"> Hier hast du die Möglichkeit, Ordnung in deine Einkaufsplanung zu bringen. 
+                <p>Erstelle ganz einfach <em>verschiedene Einkaufslisten</em>, finde in den unten aufgelisteten <a id="kat" href = "#Kategorien">Kategorien</a>
+                    die Produkte, die du benötigst oder suche <strong> schnell und unkompliziert </strong> selbst nach einem bestimmten Produkt.
+                </p> 
             </p>
+            
+            
         </div>
         
         <form>
@@ -45,8 +49,64 @@
             
         </form>
 
-        <h2 id = "kategorien"> Kategorien </h2>        
-        <ul> <!-- soll später Popup werden/Tree view(?)-->
+
+        <div>
+        <h2 id = "kategorien"> Kategorien </h2>   
+        
+        <details>
+            <summary> Obst &amp; Gemüse</summary>
+            <details>
+                <summary> Äpfel </summary>
+                <details>
+                    <summary>Rote Äpfel</summary>
+                    <form action="/action_page.php">
+                        <label for="äpfel">Menge:</label>
+                        <select id="äpfel">
+                            <option value="1"selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="8">8</option>
+                            <option value="10">10</option>
+                            <option value="1kg">1kg</option>
+                            <option value="2kg">2kg</option>
+                        </select>
+
+                        <input type="submit" value="Submit">
+                      </form> 
+                      
+
+                </details>
+                <details>
+                <summary>Grüne Äpfel</summary>
+                    <form action="/action_page.php">
+                        <label for="äpfel">Menge:</label>
+                        <select id="äpfel">
+                            <option value="1"selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="8">8</option>
+                            <option value="10">10</option>
+                            <option value="1kg">1kg</option>
+                            <option value="2kg">2kg</option>
+                        </select>
+
+                        <input type="submit" value="Submit">
+                      </form>
+
+                </details>
+
+            </div>
+               
+               
+      
+
+        
+        
+       <!--  <ul> soll später Popup werden/Tree view(?)
             <li> <a href="" > Obst &amp; Gemüse </a> </li>
             <li> <a href="" > Brot &amp; Backwaren </a> </li>
             <li> <a href="" > Milch &amp; Käse </a> </li>
@@ -61,7 +121,7 @@
             <li> <a href="" > Haustier-Bedarf </a> </li>
             <li> <a href="" > Haus &amp; Garten </a> </li>
         </ul>
-
+    -->
         
 
     </main>
