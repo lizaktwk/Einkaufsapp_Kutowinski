@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrieren</title>
+
+    <link rel="stylesheet" href="styles/main.css"/>
+
+    <script src="scripts/script.js"></script>
+
+</head>
+<body onload="document.registration.userid.focus();">
+    <h1>Jetzt anmelden:</h1>
+
+<form name='registration' onSubmit="formValidation();">
+<ul>
+<li><label for="userid">User Name:</label></li>
+<li><input type="text" name="userid" size="14" /></li>
+<li><label for="email">E-Mail:</label></li>
+<li><input type="text" name="email" size="50" /></li>
+<li><label for="passid">Passwort:</label></li>
+<li><input type="password" name="passid" size="12" /></li>
+
+<li><input type="submit" name="submit" value="Submit" /></li>
+</ul>
+</form>
+    
+</body>
+</html>

@@ -8,10 +8,11 @@
     <title>Einkaufsliste Startseite</title>
 
     <link rel="stylesheet" href="styles/main.css"/>
-    <!-- <script src = "js/scripts.js"defer/> --> 
+    <script type="text/javascript" src="scripts/script.js" defer></script>
     
 </head>
 <body>
+    <script type="text/javascript" src="scripts/script.js" defer></script>
     <header> 
         <a href="listen.html" class="button-74">Listen</a>
         <a href="teilen.html" class="button-74">Teilen</a>
@@ -40,88 +41,38 @@
             
             
         </div>
-        
-        <form>
+
+        <div id="suche">
+            <label for="search">Suche nach Produkt: </label>
+            <input type="text" id="search">
             
-                <label>Suche nach Produkt:</label>
-                <input type="text" />
-                <!--<button type="submit" formaction=" hier fehlt noch Kontent">Go!</button> -->
+            <ul id="prediction">
             
-        </form>
+            </ul>
+        </div>
+
 
 
         <div>
-        <h2 id = "kategorien"> Kategorien </h2>   
-        
-        <details>
-            <summary> Obst &amp; Gemüse</summary>
-            <details>
-                <summary> Äpfel </summary>
-                <details>
-                    <summary>Rote Äpfel</summary>
-                    <form action="/action_page.php">
-                        <label for="äpfel">Menge:</label>
-                        <select id="äpfel">
-                            <option value="1"selected>1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="8">8</option>
-                            <option value="10">10</option>
-                            <option value="1kg">1kg</option>
-                            <option value="2kg">2kg</option>
-                        </select>
+        <h2 id = "h2"> Kategorien </h2>   
 
-                        <input type="submit" value="Submit">
-                      </form> 
-                      
+        <div class="kategorien">
+            <a href = "obst.html"><button class="button-kategorien"> Obst &amp; Gemüse</button>  </a>
+            <a href = "backwaren.html"><button class="button-kategorien"> Brot &amp; Backwaren</button>  </a>
+            <a href = ""><button class="button-kategorien">  Milch &amp; Käse</button>  </a>
+            <a href = ""><button class="button-kategorien"> Fleisch &amp; Fisch</button>  </a>
+            <a href = "l"><button class="button-kategorien"> Zutaten &amp; Gewürze</button>  </a>
+            <a href = ""><button class="button-kategorien"> Tiefgefroren &amp; Fertiggerichte</button>  </a>
+            <a href = ""><button class="button-kategorien"> Getreideprodukte (Nudeln, Reis etc.)</button>  </a>
+            <a href = ""><button class="button-kategorien"> Snacks &amp; Süßigkeiten</button>  </a>
+            <a href = ""><button class="button-kategorien"> Getränke</button>  </a>
+            <a href = ""><button class="button-kategorien"> Haushalt</button>  </a>
+            <a href = ""><button class="button-kategorien"> Pflege, Gesundheit &amp; Kosmetik</button>  </a>
+            <a href = ""><button class="button-kategorien"> Haustier-Bedarf</button>  </a>
+            <a href = ""><button class="button-kategorien"> Haus &amp; Garten</button>  </a>
+            
 
-                </details>
-                <details>
-                <summary>Grüne Äpfel</summary>
-                    <form action="/action_page.php">
-                        <label for="äpfel">Menge:</label>
-                        <select id="äpfel">
-                            <option value="1"selected>1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="8">8</option>
-                            <option value="10">10</option>
-                            <option value="1kg">1kg</option>
-                            <option value="2kg">2kg</option>
-                        </select>
-
-                        <input type="submit" value="Submit">
-                      </form>
-
-                </details>
-
-            </div>
-               
-               
-      
-
-        
-        
-       <!--  <ul> soll später Popup werden/Tree view(?)
-            <li> <a href="" > Obst &amp; Gemüse </a> </li>
-            <li> <a href="" > Brot &amp; Backwaren </a> </li>
-            <li> <a href="" > Milch &amp; Käse </a> </li>
-            <li> <a href="" > Fleisch &amp; Fisch </a> </li>
-            <li> <a href="" > Zutaten &amp; Gewürze </a></li>
-            <li> <a href="" > Tiefgefroren &amp; Fertiggerichte </a> </li>
-            <li> <a href="" > Getreideprodukte (Nudeln, Reis etc.)</a> </li>
-            <li> <a href="" > Snacks &amp; Süßigkeiten </a></li>
-            <li> <a href="" > Getränke </a> </li>
-            <li> <a href="" > Haushalt </a> </li>
-            <li> <a href="" > Pflege, Gesundheit &amp; Kosmetik </a> </li>
-            <li> <a href="" > Haustier-Bedarf </a> </li>
-            <li> <a href="" > Haus &amp; Garten </a> </li>
-        </ul>
-    -->
+        </div>        
         
 
     </main>

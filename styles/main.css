@@ -102,9 +102,33 @@ details[open] summary {
     font-style: italic;
 }
 
+/* Suche nach Produkt */
+* {
+    box-sizing: border-box;
+  }
+
+#myInput {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+  }
+  
+  #suche {
+    color: whitesmoke;
+    font-family: 'Grape Nuts', cursive;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-family: 'Karla', sans-serif;
+  }
+  
 
 
-#kategorien::first-letter {
+
+#h2::first-letter {
     font-size: larger;
     font-weight: bolder;
     color: rgb(201, 180, 180);
@@ -112,6 +136,62 @@ details[open] summary {
     font-family: 'IBM Plex Sans Arabic', sans-serif;
     font-family: 'Karla', sans-serif;
 }
+
+/*Unterkategorien-Seiten*/
+
+.unterseite-kategorie {
+    color: rgb(181, 160, 160);
+    font-family: 'Grape Nuts', cursive;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    text-align: center;
+}
+
+#aBisZ {
+
+}
+
+.grid-container {
+    /* background-color:#ffdbdb; */
+    padding: 20px;
+    margin: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 30%;
+    justify-content: center;
+    grid-gap: 50px 20px;
+    
+}
+
+
+    /*.kategorien {
+        border: 1px outset blue;
+        background-color: lightBlue;
+        height:100px;
+        width:100px;
+        cursor:pointer;
+     }
+     
+     .kategorien:hover {
+        background-color: blue;
+        color:white;
+     }
+
+     #buttonKat {
+        border: 1px outset blue;
+        background-color: lightBlue;
+        height:100px;
+        width:100px;
+        cursor:pointer;
+     }
+
+     #aufklapp {
+        border: 1px outset blue;
+        background-color: lightBlue;
+        height:50px;
+        width:100px;
+     } */
+
 
 ul li a {
     color: whitesmoke;
@@ -175,6 +255,52 @@ ol li {
 
 
 /* Buttons */
+.button-kategorien {
+    position: relative;
+    width: 90%;
+    text-align: left;
+    background-color: rgb(71, 64, 64);
+    border: 2px ridge whitesmoke;
+    border-radius: 20px;
+    color: whitesmoke;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px;
+    line-height: 25px;
+
+}
+
+/*Akkordeon-Button*/
+ /* Style the buttons that are used to open and close the accordion panel */
+ .accordion { /*line-height vllt hinzufügen*/
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    display: inline-block;
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color:rgb(161, 140, 140);
+    font-size: 14px;
+    width: auto;
+    display: none;
+    overflow: hidden;
+  } 
+
 .button-74 {
       background-color: #fbe4e0;
       border: 2px solid #383232;
@@ -209,4 +335,47 @@ ol li {
         padding: 0 25px;
       }
     }
+
+
+
+    /*Registrieren*/
+    h1 {
+        margin-left: 70px;
+        }
+        form li {
+        list-style: none;
+        margin-bottom: 5px;
+        }
+        
+        form ul li label{
+        float: left;
+        clear: left;
+        width: 100px;
+        text-align: right;
+        margin-right: 10px;
+        font-family:Verdana, Arial, Helvetica, sans-serif;
+        font-size:14px;
+        }
+        
+        form ul li input, select, span {
+        float: left;
+        margin-bottom: 10px;
+        }
+        
+        form textarea {
+        float: left;
+        width: 350px;
+        height: 150px;
+        }
+        
+        [type="submit"] {
+        clear: left;
+        margin: 20px 0 0 230px;
+        font-size:18px
+        }
+        
+        p {
+        margin-left: 70px;
+        font-weight: bold;
+        }
    
