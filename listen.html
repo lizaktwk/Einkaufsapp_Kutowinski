@@ -1,36 +1,86 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en" dir="ltr">
+
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name = "description" content="Einkaufsapp-Clone"/>
-    <meta name = "author" content="Lisa Kutowinski"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Einkaufsapp-Clone" />
+    <meta name="author" content="Lisa Kutowinski" />
     <title>Meine Einkaufslisten</title>
 
-    <script type="text/javascript" src="scripts/script.js" defer></script>
-    
+    <!-- <link rel="stylesheet" href="styles/main.css" /> -->
+    <!-- Iconscout Link for Icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <script type="text/javascript" src="scripts/listenScript.js" defer></script>
+
+
+
 </head>
+
 <body>
-    <header> 
+    <header>
         <h1>Meine Einkaufslisten</h1>
     </header>
 
-    <main> 
-        <p> Hier hast du die Möglichkeit, dir verschiedene Listen für deine Einkäufe zu erstellen. </p>
-        <h3> Ideen </h3>
-        <ul>
-            <li> Supermarkt </li>
-            <li> Für zu Hause </li>
-            <li> Deine nächste Fete </li>
-            <li> Bei der Arbeit </li>
-        </ul>
+    <main>
+        <div class="popup-box" id="popup">
+            <div class="popup">
+                <div class="content">
+                    <form action="#">
+                        <div class="row title">
+                            <label>Neue Liste:</label>
+                            <input type="text" spellcheck="false" id="listName" disabled>
+                        </div>
+                        <div class="addItem">
+                            <label>Produkt hinzufügen:</label>
+                            <input type="text" id="search">
+                            <div class="added item">
+                                <ul id="prediction">
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="addedItems">
+                            <label>Hinzugefügte Produkte:</label>
+                            <div>
+                                <ul id="addedItemsList">
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="saveListButton" id="saveListButton">Liste speichern</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="listsWrapper">
+            <button class="add-list" id="addListButton">Add List</button>
+        </div>
+        <!-- <div class = "listsWrapper">
+            <li class = "add-box">
+                <div class = "icon"><i class = "uil uil-plus"></i></div>
+                <p>Add new item</p>
+            </li>
+            <li class = "item">
+                <div class="settings">
+                    <i class="uil uil-ellipsis-h"></i>
+                </div>
+            </li>
+
+        </div> -->
 
     </main>
 
-    <footer> 
-        
+
+
+
+
+    <footer>
+
     </footer>
-    
-    
+
+
 </body>
+
 </html>

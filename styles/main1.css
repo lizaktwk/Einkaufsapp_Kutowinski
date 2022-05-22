@@ -1,0 +1,168 @@
+
+/*Startseite*/
+
+
+  body {
+    background: rgb(71, 64, 64);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+body, html {
+  height: 100%;
+}
+  
+  .parallax {
+    /* The image used */
+    background-image: url('/images/mall.jpg');
+    
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: inherit;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+  }
+
+  #startseite {
+      height: 1px;
+      background-color: rgb(71, 64, 64);
+      font-size: 16px;
+  }
+
+  #heading-startseite {
+      text-align: center;
+      font-size: 50px;
+      font-family: 'Courier New', Courier, monospace;
+      
+
+  }
+
+  div.background {
+    background: url(klematis.jpg) repeat;
+    border: 2px solid black;
+  }
+
+  div.transbox {
+    margin: 30px;
+    padding-top: 5px;
+    background-color: #ffffff;
+    opacity: 0.9;
+    
+  }
+  
+  div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+    align-content:flex-start;
+    font-family: 'Grape Nuts', cursive;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-family: 'Karla', sans-serif;
+    
+    
+  }
+
+   h1 {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+    align-content:flex-start;
+    font-family: 'Grape Nuts', cursive;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-family: 'Karla', sans-serif;
+  } 
+
+  #suche {
+    margin: 5%;
+    font-family: 'Grape Nuts', cursive;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+  }
+
+  /*Unterkategorien-Seiten*/
+
+.unterseite-kategorie {
+    color: rgb(181, 160, 160);
+    font-family: 'Grape Nuts', cursive;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    text-align: center;
+}
+
+#aBisZ {
+
+}
+
+.grid-container {
+    /* background-color:#ffdbdb; */
+    padding: 20px;
+    margin: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 30%;
+    justify-content: center;
+    grid-gap: 50px 20px;
+    
+}
+
+  
+    
+     /* Buttons */
+     .button-kategorien {
+        margin-left: 5%;
+        position: relative;
+        width: 90%;
+        text-align: left;
+        background-color: rgb(71, 64, 64);
+        border: 2px ridge whitesmoke;
+        border-radius: 20px;
+        color: whitesmoke;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 14px;
+        padding: 10px;
+        line-height: 25px;
+    
+    }
+
+    /*Akkordeon-Button*/
+ /* Style the buttons that are used to open and close the accordion panel */
+ .accordion { /*line-height vllt hinzufügen*/
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    display: inline-block;
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color:rgb(161, 140, 140);
+    font-size: 14px;
+    width: auto;
+    display: none;
+    overflow: hidden;
+  } 
+
+  
+
+
+
+
