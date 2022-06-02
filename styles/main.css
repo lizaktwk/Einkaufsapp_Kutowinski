@@ -54,7 +54,7 @@ form label {
 input {
     background: white;
     /* rgb(71, 64, 64);*/
-    color: whitesmoke;
+    color: black;
     font-family: 'Grape Nuts', cursive;
     font-family: 'IBM Plex Sans Arabic', sans-serif;
     font-family: 'Karla', sans-serif;
@@ -210,10 +210,11 @@ details[open] summary {
 
 
 
-
+/* hiding der Checkboxen auf obst.html */
 #title2 {
     display: none;
 }
+
 
 div.column.content {
     display: inline-block;
@@ -222,9 +223,9 @@ div.column.content {
 
 
 
-div section label {
+.wrapper section label {
     display: inline-block;
-    padding: 10% 10%;
+    padding: 5% 10%;
     /* padding: 30px 22px; */
     margin: 0 0 1px 0;
     cursor: pointer;
@@ -250,15 +251,20 @@ label:hover {
 }
 
 .content {
-    background: #A7A7A7;
-    text-align: start;
+    /* background: #A7A7A7; */
+    text-align:left;
     padding: 10px 25px;
-    border: 1px solid #A7A7A7;
+    /* border: 1px solid #A7A7A7; */
     margin: 0 0 1px 0;
     border-radius: 3px;
 
+}
 
-
+.content p {
+    background: #4E8774;
+    padding: 10px 25px;;
+    margin: 0 0 1px 0;
+    border-radius: 3px;
 }
 
 input+label+.content {
@@ -316,6 +322,10 @@ ul li a {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+}
+
+.contentNewList {
+    
 }
 
 

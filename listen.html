@@ -2,83 +2,84 @@
 <html lang="en" dir="ltr">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Einkaufsapp-Clone" />
-    <meta name="author" content="Lisa Kutowinski" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Einkaufsapp-Clone"/>
+    <meta name="author" content="Lisa Kutowinski"/>
     <title>Meine Einkaufslisten</title>
 
     <!-- <link rel="stylesheet" href="styles/main.css" /> -->
     <!-- Iconscout Link for Icons -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-
+    <script type="text/javascript" src="scripts/ShoppingList.js" defer></script>
     <script type="text/javascript" src="scripts/listenScript.js" defer></script>
-
 
 
 </head>
 
 <body>
-    <header>
-        <h1>Meine Einkaufslisten</h1>
-    </header>
+<header>
+    <h1>Einkaufslisten</h1>
+</header>
 
-    <main>
-        <div class="popup-box" id="popup">
-            <div class="popup">
-                <div class="content">
-                    <form action="#">
-                        <div class="row title">
-                            <label>Neue Liste:</label>
-                            <input type="text" spellcheck="false" id="listName" disabled>
+<main>
+    <div class="popup-box" id="popup">
+        <div class="popup">
+            <div class="contentNewList">
+                <form action="#">
+                    <div class="row title">
+                        <label>Neue Liste:</label>
+                        <input type="text" spellcheck="false" id="listName">
+                    </div>
+                    <div class="addItem">
+                        <label>Produkt hinzufügen:</label>
+                        <input type="text" id="search">
+                        <div class="added item">
+                            <ul id="prediction">
+                            </ul>
                         </div>
-                        <div class="addItem">
-                            <label>Produkt hinzufügen:</label>
-                            <input type="text" id="search">
-                            <div class="added item">
-                                <ul id="prediction">
-                                </ul>
-                            </div>
+                    </div>
+                    <div class="addedItems">
+                        <label>Hinzugefügte Produkte:</label>
+                        <div>
+                            <ul id="addedItemsList">
+                            </ul>
                         </div>
-                        <div class="addedItems">
-                            <label>Hinzugefügte Produkte:</label>
-                            <div>
-                                <ul id="addedItemsList">
-                                </ul>
-                            </div>
-                        </div>
-                        <button class="saveListButton" id="saveListButton">Liste speichern</button>
+                    </div>
+                    <button class="saveListButton" id="saveListButton">Liste speichern</button>
 
-                    </form>
-                </div>
+                </form>
             </div>
         </div>
+    </div>
 
-        <div class="listsWrapper">
-            <button class="add-list" id="addListButton">Add List</button>
-        </div>
-        <!-- <div class = "listsWrapper">
-            <li class = "add-box">
-                <div class = "icon"><i class = "uil uil-plus"></i></div>
-                <p>Add new item</p>
-            </li>
-            <li class = "item">
-                <div class="settings">
-                    <i class="uil uil-ellipsis-h"></i>
-                </div>
-            </li>
+    <div class="listsWrapper">
+        <button class="add-list" id="addListButton">Add List</button>
+    </div>
+    <div>
+        <ul id="createdLists">
+        </ul>
+        <div id="listView"></div>
+    </div>
+    <!-- <div class = "listsWrapper">
+        <li class = "add-box">
+            <div class = "icon"><i class = "uil uil-plus"></i></div>
+            <p>Add new item</p>
+        </li>
+        <li class = "item">
+            <div class="settings">
+                <i class="uil uil-ellipsis-h"></i>
+            </div>
+        </li>
 
-        </div> -->
+    </div> -->
 
-    </main>
-
-
+</main>
 
 
+<footer>
 
-    <footer>
-
-    </footer>
+</footer>
 
 
 </body>

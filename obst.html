@@ -27,9 +27,10 @@
                 <label for="title1">Ananas</label>
 
                 <div class="content">
-                    <p>Rote Äpfel</p>
+                    
                     <label for="quantity"> Menge: </label>
                     <input type="number" id="quantity" min="1" max="100">
+                    <button type="submit">add</button>
 
                 </div>
 
@@ -46,6 +47,11 @@
                         <button type="submit">add</button>
                     </form>
                     <p>Grüne Äpfel</p>
+                    <form action="/action_page.php" onsubmit="chooseList">
+                        <label for="quantity" class="quantity-display"> Menge: </label>
+                        <input type="number" id="quantity" min="1" max="100">
+                        <button type="submit">add</button>
+                    </form>
                 </div>
             </div>
             <div class="column">
