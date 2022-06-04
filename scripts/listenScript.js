@@ -1,5 +1,5 @@
 let lists = []; // Array to store all ShoppingLists
-loadListsFromLocalStorage()
+//loadListsFromLocalStorage()
 console.log(lists)
 let addedItemsList = []; // Array to store currently added items
 let availableItemsList = ["apfel", "banane", "erdbeere", "erdapfel"]; // Array with all possible items
@@ -26,6 +26,8 @@ popUpDiv.style.display = "none";
 createdListsHtml.style.display = "block";
 
 displayAllLists();
+
+loadListsFromApi('http://127.0.0.1:3000/')
 
 function showMainView() {
     hideListView();
@@ -85,6 +87,10 @@ function saveList() {
     let list = new ShoppingList(addedItemsList, name);
     lists.push(list)
     localStorage.setItem("storedLists", JSON.stringify(Array.from(lists.entries())))
+    sendJSONStringWithPOST(
+        'http://localhost:3000/',
+        JSON.stringify(lists)
+    );
     hideAddListView();
     cleanUpAddListView()
     showMainView();
@@ -141,14 +147,29 @@ function loadListsFromLocalStorage() {
     } else {
         lists = [];
     }
+}
 
+function loadListsFromJson(json) {
+    if (json != null) {
+        let jsonList = JSON.parse(json);
+        jsonList.forEach(shoppingListBlueprint => {
+            let shoppingList = new ShoppingList(shoppingListBlueprint._itemList, shoppingListBlueprint._listName)
+            lists.push(shoppingList)
+            console.log("added to list: " + shoppingList.listName)
+        });
+        displayAllLists();
+    } else {
+        lists = [];
+    }
 }
 
 
 function displayAllLists() {
     console.log("DisplayAllLists...")
+    console.log(lists.length)
     createdListsHtml.innerHTML = "";
     lists.forEach(shoppingList => {
+        console.log(shoppingList)
         let li = document.createElement("li");
         let button = document.createElement("button");
         button.innerText = shoppingList.listName;
@@ -158,5 +179,22 @@ function displayAllLists() {
         li.appendChild(button);
         createdListsHtml.appendChild(li);
     });
+
+
 }
+
+async function sendJSONStringWithPOST(url, jsonString) {
+    const response = await fetch(url, {
+        method: 'post',
+        body: jsonString,
+    });
+}
+
+async function loadListsFromApi(url) {
+    const response = await fetch(url);
+    console.log('Response', response); // komplettes Response Objekt
+    const text = await response.text();
+    loadListsFromJson(text)
+}
+;
 
