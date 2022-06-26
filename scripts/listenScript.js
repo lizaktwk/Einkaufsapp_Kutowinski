@@ -1,6 +1,6 @@
 let lists = []; // Array to store all ShoppingLists
 //loadListsFromLocalStorage()
-console.log(lists)
+console.log(lists);
 let addedItemsList = []; // Array to store currently added items
 let availableItemsList = ["apfel", "banane", "erdbeere", "erdapfel"]; // Array with all possible items
 let searchInput = document.getElementById("search");

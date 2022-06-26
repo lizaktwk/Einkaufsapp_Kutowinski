@@ -1,1 +1,61 @@
-[{"_itemList":["ABBA"],"_listName":"ABBA"},{"_itemList":["apfel","erdbeere"],"_listName":"Test2"},{"_itemList":[],"_listName":"Kokain"},{"_itemList":["erdbeere"],"_listName":"teeest"},{"_itemList":["erdbeere"],"_listName":"y"},{"_itemList":["erdbeere"],"_listName":"rrr"},{"_itemList":["erdapfel"],"_listName":"rguheoutebzbp9eznb5  eiperizh"},{"_itemList":["erdbeere"],"_listName":"Newu"},{"_itemList":["erdbeere"],"_listName":"5hth"},{"_itemList":["erdbeere"],"_listName":"rgr"}]
+[
+    {
+        "_itemList": [
+            "ABBA"
+        ],
+        "_listName": "ABBA"
+    },
+    {
+        "_itemList": [
+            "apfel",
+            "erdbeere"
+        ],
+        "_listName": "Test2"
+    },
+    {
+        "_itemList": [],
+        "_listName": "Kokain"
+    },
+    {
+        "_itemList": [
+            "erdbeere"
+        ],
+        "_listName": "teeest"
+    },
+    {
+        "_itemList": [
+            "erdbeere"
+        ],
+        "_listName": "y"
+    },
+    {
+        "_itemList": [
+            "erdbeere"
+        ],
+        "_listName": "rrr"
+    },
+    {
+        "_itemList": [
+            "erdapfel"
+        ],
+        "_listName": "rguheoutebzbp9eznb5  eiperizh"
+    },
+    {
+        "_itemList": [
+            "erdbeere"
+        ],
+        "_listName": "Newu"
+    },
+    {
+        "_itemList": [
+            "erdbeere"
+        ],
+        "_listName": "5hth"
+    },
+    {
+        "_itemList": [
+            "erdbeere"
+        ],
+        "_listName": "rgr"
+    }
+]
