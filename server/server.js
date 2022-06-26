@@ -30,7 +30,7 @@ const server = http.createServer((request, response) => {
                 if (err) {
                     console.error(err);
                 } else {
-                    console.info("JSON saved successfully!")
+                    console.info("JSON saved successfully!");
                 }
             });
         });
