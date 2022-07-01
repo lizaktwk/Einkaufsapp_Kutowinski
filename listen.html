@@ -2,84 +2,108 @@
 <html lang="en" dir="ltr">
 
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="Einkaufsapp-Clone"/>
-    <meta name="author" content="Lisa Kutowinski"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Einkaufsapp-Clone" />
+    <meta name="author" content="Lisa Kutowinski" />
     <title>Meine Einkaufslisten</title>
 
-    <!-- <link rel="stylesheet" href="styles/main.css" /> -->
-    <!-- Iconscout Link for Icons -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+
+
     <script type="text/javascript" src="scripts/ShoppingList.js" defer></script>
     <script type="text/javascript" src="scripts/listenScript.js" defer></script>
 
 
 </head>
 
-<body>
-<header>
-    <h1>Einkaufslisten</h1>
-</header>
+<body class="home-body">
+    <div class="header">
+        <h1><a href=index.html>Shopping List</a> - My Shopping Lists</h1>
+    </div>
 
-<main>
-    <div class="popup-box" id="popup">
-        <div class="popup">
-            <div class="contentNewList">
-                <form action="#">
-                    <div class="row title">
-                        <label>Neue Liste:</label>
-                        <input type="text" spellcheck="false" id="listName">
-                    </div>
-                    <div class="addItem">
-                        <label>Produkt hinzufügen:</label>
-                        <input type="text" id="search">
-                        <div class="added item">
-                            <ul id="prediction">
-                            </ul>
+    <div class="row">
+        <div class="col-3 col-s-3 menu">
+            <ul>
+                <li><a href="rezepte.html">Recipes &amp; Inspirations</a></li>
+                <li><a href="listen.html">My Shopping Lists</a></li>
+                <li><a href="favs.html">Saved Recipes</a></li>
+            </ul>
+        </div>
+
+        <div class="col-6 col-s-9">
+            <h1 id="cat-h2">Categories</h1>
+            <div class="css-addlist">
+                <div class="popup-box" id="popup">
+                    <div class="popup">
+                        <div class="contentNewList">
+                            <form action="#">
+                                <div class="row title">
+                                    <div class="frame">
+
+                                        <label><h3>New list:</h3></label>
+                                        <input type="text" spellcheck="false" id="listName">
+                                        <div class="addItem">
+                                            <label><h4>Add item:</h4></label>
+                                            <input type="text" id="search">
+                                            <div class="added item">
+                                                <ul id="prediction">
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="addedItems">
+                                            <label> <h4>Added items:</h4></label>
+                                            <div>
+                                                <ul id="addedItemsList">
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <button class="saveListButton" id="saveListButton">Save list</button>
+                                    </div>
+
+                                </div>
+                            </form>
                         </div>
                     </div>
-                    <div class="addedItems">
-                        <label>Hinzugefügte Produkte:</label>
-                        <div>
-                            <ul id="addedItemsList">
-                            </ul>
-                        </div>
-                    </div>
-                    <button class="saveListButton" id="saveListButton">Liste speichern</button>
+                </div>
+            </div>
 
-                </form>
+            <div class="listsWrapper">
+                <button class="add-list" id="addListButton">Add List</button>
+            </div>
+            <div>
+                <ul id="createdLists">
+                </ul>
+                <div id="listView"></div>
+            </div>
+        </div>
+
+        <div class="col-3 col-s-12">
+            <div class="aside">
+                <h2>Search item:</h2>
+                <div id="suche">
+                    <label for="search"></label>
+                    <input type="text" id="search">
+
+                    <ul id="prediction">
+
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="listsWrapper">
-        <button class="add-list" id="addListButton">Add List</button>
+    <div class="footer">
+
     </div>
-    <div>
-        <ul id="createdLists">
-        </ul>
-        <div id="listView"></div>
-    </div>
-    <!-- <div class = "listsWrapper">
-        <li class = "add-box">
-            <div class = "icon"><i class = "uil uil-plus"></i></div>
-            <p>Add new item</p>
-        </li>
-        <li class = "item">
-            <div class="settings">
-                <i class="uil uil-ellipsis-h"></i>
-            </div>
-        </li>
-
-    </div> -->
-
-</main>
 
 
-<footer>
 
-</footer>
+    <footer>
+
+    </footer>
 
 
 </body>

@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Einkaufsapp-Clone" />
+  <meta name="author" content="Lisa Kutowinski" />
+  <title>Shopping list Home</title>
+
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+  <script type="text/javascript" src="scripts/grid.js" defer></script>
+</head>
+
+<body class="home-body">
+
+  <div class="header">
+    <h1><a href = index.html>Shopping List</a> - Fruit and Vegetables</h1>
+  </div>
+
+  <div class="row">
+    <div class="col-3 col-s-3 menu">
+      <ul>
+        <li><a href="rezepte.html">Recipes &amp; Inspirations</a></li>
+        <li><a href="listen.html">My Shopping Lists</a></li>
+        <li><a href="favs.html">Saved Recipes</a></li>
+      </ul>
+    </div>
+
+    <div class="col-6 col-s-9">
+      <h1 id="cat-h2">Fruit and Vegetables</h1>
+      <ul class="products-background">
+        <div class="grid-row">
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Apples</summary>
+              <ul class="grid-content">
+                <form>
+                  <li class="sub-category"> Red Apples </li>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+                <form>
+                  <li class="sub-category"> Green Apples </li>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Apricot</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Artichokes</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Arugula</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Asparagus</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Avocado</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Bananas</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Basil</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Beets</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Bell pepper</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Berries</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Blackberries</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Blueberries</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Broccoli</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Cabbage</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Carrots</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Cauliflower</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Celery</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Cherries</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Cherry tomatoes</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Chilies</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Chives</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Cilantro</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Cranberries</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Cucumber</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Dates</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Eggplant</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Fennel</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Figs</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Garlic</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Ginger</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Grapefruit</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Grapes</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Herbs</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Kiwis</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Leek</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Lemon</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Lettuce</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Lime</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Mandarins</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Mango</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Melon</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Mint</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Mushrooms</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Nectarine</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Olives</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Onions</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Orange</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Parsley</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Passion fruit</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Peach</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Pears</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Peas</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Pineapple</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Potatoes</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Prunes</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Radish</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Rhubarb</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Sage</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Salad</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Scallions</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Spinach</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Squash</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Strawberries</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Sun dried tomatoes</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Sweet corn</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Sweet potatoes</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Thyme</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Tomatoes</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Watermelon</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+          <div class="grid-column">
+            <details class="details-example">
+              <summary>Zucchini</summary>
+              <ul class="grid-content">
+                <form>
+                  <li><label for="quantity"> Amount: </label> <input type="number" id="quantity" min="1" max="100"></li>
+                  <li><button class="add-button">add</button></li>
+                </form>
+              </ul>
+            </details>
+
+          </div>
+
+        
+      </ul>
+    </div>
+
+    <div class="col-3 col-s-12">
+      <div class="aside">
+        <h2>Search item:</h2>
+        <div id="suche">
+          <label for="search"></label>
+          <input type="text" id="search">
+
+          <ul id="prediction">
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    
+  </div>
+
+
+</body>
+
+</html>

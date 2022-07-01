@@ -1,4 +1,7 @@
-
+//Popup Fenster, nachdem Menge und addButton ausgewählt wurden
+// function openForm() {
+//     document.getElementById("myForm").style.display = "block";
+// }
 
 
 

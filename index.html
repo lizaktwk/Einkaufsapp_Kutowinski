@@ -1,109 +1,90 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name = "description" content="Einkaufsapp-Clone"/>
-    <meta name = "author" content="Lisa Kutowinski"/>
-    <title>Einkaufsliste Startseite</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Einkaufsapp-Clone" />
+    <meta name="author" content="Lisa Kutowinski" />
+    <title>Shopping list Home</title>
 
-    <link rel="stylesheet" href="styles/main1.css"/>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
     <script type="text/javascript" src="scripts/script.js" defer></script>
-
-   
-    
 </head>
-<body>
-    <div class="parallax"></div>
 
-    <h1 id="heading-startseite">Startseite</h1>
+<body class="home-body">
 
-    <div id="startseite" >
-        <div class="background"></div>
-        <div class="transbox">
-            <p> 
-                
-                <p id="text-position">Hier hast du die Möglichkeit, <strong> Ordnung in deine Einkaufsplanung </strong> zu bringen. Erstelle ganz einfach verschiedene Einkaufslisten, finde in den unten aufgelisteten <a id="kat" href = "#Kategorien">Kategorien</a>
-                    die Produkte, die du benötigst oder suche <strong> schnell und unkompliziert </strong> selbst nach einem bestimmten Produkt.
-            </p>
-
-            <div id="suche">
-                <label for="search">Suche nach Produkt: </label>
-                <input type="text" id="search">
-                
-                <ul id="prediction">
-                
-                </ul>
-            </div>
-            
-            <h1>Kategorien</h1>>
-            <!-- <form action="/action_page.php">
-                <label for="quantity"> Menge: </label>
-                <input type="number" id="quantity" min="1" max="100"> -->
-
-            <div class="kategorien">
-                <a href = "obst.html"><button class="button-kategorien"> Obst &amp; Gemüse</button>  </a>
-                <a href = "backwaren.html"><button class="button-kategorien"> Brot &amp; Backwaren</button>  </a>
-                <a href = ""><button class="button-kategorien">  Milch &amp; Käse</button>  </a>
-                <a href = ""><button class="button-kategorien"> Fleisch &amp; Fisch</button>  </a>
-                <a href = "l"><button class="button-kategorien"> Zutaten &amp; Gewürze</button>  </a>
-                <a href = ""><button class="button-kategorien"> Tiefgefroren &amp; Fertiggerichte</button>  </a>
-                <a href = ""><button class="button-kategorien"> Getreideprodukte (Nudeln, Reis etc.)</button>  </a>
-                <a href = ""><button class="button-kategorien"> Snacks &amp; Süßigkeiten</button>  </a>
-                <a href = ""><button class="button-kategorien"> Getränke</button>  </a>
-                <a href = ""><button class="button-kategorien"> Haushalt</button>  </a>
-                <a href = ""><button class="button-kategorien"> Pflege, Gesundheit &amp; Kosmetik</button>  </a>
-                <a href = ""><button class="button-kategorien"> Haustier-Bedarf</button>  </a>
-                <a href = ""><button class="button-kategorien"> Haus &amp; Garten</button>  </a>
-                
-    
-            </div> 
-        </div>
-    
+    <div class="header">
+        <h1>Shopping list - Home</h1>
     </div>
-    
-    <div class="parallax"></div>
 
+    <div class="row">
+        <div class="col-3 col-s-3 menu">
+            <ul>
+                <li><a href="rezepte.html">Recipes &amp; Inspirations</a></li>
+                <li><a href="listen.html">My Shopping Lists</a></li>
+                <li><a href="favs.html">Saved Recipes</a></li>
+                <li class="einRezept"><a href="tomatensuppe.html"><img src="img/tomatensuppe.jpg" alt="Link zum Rezept"
+                            width="60%" height="10%"></a> <br> Tomato Soup with Basil <button class="button-74"><a
+                            href="tomatensuppe.html">Get the recipe</a></button> </li>
 
-
-    <script type="text/javascript" src="scripts/script.js" defer></script>
-    <header> 
-        <a href="listen.html" class="button-74">Listen</a>
-        <a href="teilen.html" class="button-74">Teilen</a>
-        <a href="weiteres.html" class="button-74">Weiteres</a>
-        
-
-    </header>
-
-    <main> 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&family=IBM+Plex+Sans+Arabic:wght@200&family=Karla:wght@300&display=swap" rel="stylesheet">         
-
-        
-
-
-        <!-- <h1>Startseite</h1> -->
-        
-        <!-- 
-
-        <div id="suche">
-            <label for="search">Suche nach Produkt: </label>
-            <input type="text" id="search">
-            
-            <ul id="prediction">
-            
+                <li class="einRezept"><a href="pancakes.html"><img src="img/pancakes.jpg" alt="Link zum Rezept"
+                            width="60%" height="10%"></a> <br> Pancakes <button><a href="pancakes.html">Get the
+                            recipe</a></button> </li>
+                <li class="einRezept"><a href="pastasalad.html"><img src="img/pasta-salat.jpg" alt="Link zum Rezept"
+                            width="60%" height="10%"></a> <br> ItalianPasta Salad <button><a href="pastasalad.html">Get the
+                            recipe</a></button> </li>
             </ul>
-        </div>       -->
-        
+        </div>
 
-    </main>
+        <div class="col-6 col-s-9">
+            <h1 id="cat-h2">Categories</h1>
+            <div>
+                <ul class="categories">
+                    <li> <a href="fruit.html"><button class="button-kategorien"> Fruit &amp; Vegetables</button> </a>
+                    </li>
+                    <li><a href="bread.html"><button class="button-kategorien"> Bread &amp; Pastry</button> </a>
+                    </li>
+                    <li><a href="milk.html"><button class="button-kategorien"> Milk &amp; Cheese</button></a></li>
+                    <li><a href="meat.html"><button class="button-kategorien"> Meat &amp; Fish</button> </a></li>
+                    <li><a href="spices.html"><button class="button-kategorien"> Ingredients &amp; Spices</button> </a>
+                    </li>
+                    <li><a href="frozen.html"><button class="button-kategorien"> Frozen &amp; Convenience</button> </a>
+                    </li>
+                    <li><a href="grains.html"><button class="button-kategorien"> Grain Products</button> </a></li>
+                    <li><a href="snacks.html"><button class="button-kategorien"> Snacks &amp; Sweets</button> </a></li>
+                    <li><a href="beverages.html"><button class="button-kategorien"> Beverages</button> </a></li>
+                    <li><a href="household.html"><button class="button-kategorien"> Household</button> </a></li>
+                    <li><a href="care.html"><button class="button-kategorien">Care &amp; Health</button> </a></li>
+                    <li><a href="pet.html"><button class="button-kategorien"> Pet Supplies</button> </a></li>
+                    <li><a href="garden.html"><button class="button-kategorien"> Home &amp; Garden</button> </a></li>
+                </ul>
 
-    <footer> 
-        <a href="rezepte.html" class="button-74">Rezepte &amp; Inspirationen</a>
+            </div>
+        </div>
 
-    </footer>
-    
-    
+        <div class="col-3 col-s-12">
+            <div class="aside">
+                <h2>Search item:</h2>
+                <div id="suche">
+                    <label for="search"></label>
+                    <input type="text" id="search">
+
+                    <ul id="prediction">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+
+    </div>
+
+
 </body>
+
 </html>

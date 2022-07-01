@@ -1,453 +1,545 @@
-/*allgemein*/
-body {
-    background: rgb(71, 64, 64);
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-h1 {
-    color: rgb(181, 160, 160);
-    font-family: 'Grape Nuts', cursive;
-    font-family: 'IBM Plex Sans Arabic', sans-serif;
-}
-
-h2 {
-    color: rgb(161, 140, 140);
-    font-family: 'Grape Nuts';
-    font-family: 'IBM Plex Sans Arabic', serif;
-}
-
-.kopfzeile {
-    position: relative;
-    left: -3%;
-    background-color: rgb(71, 64, 64);
-    width: 90%;
-    padding: 5px;
-    margin: 10px;
-}
-
-
-p {
-    color: whitesmoke;
-    font-family: 'Grape Nuts', cursive;
-    font-family: 'IBM Plex Sans Arabic', sans-serif;
-    font-family: 'Karla', sans-serif;
-
-}
-
-.p-position {
-    position: relative;
-    background-color: rgb(71, 64, 64);
-    width: 90%;
-    padding: 5px;
-    margin: 0px;
-}
-
-
-form label {
-    color: whitesmoke;
-    font-family: 'Grape Nuts', cursive;
-    font-family: 'IBM Plex Sans Arabic', sans-serif;
-    font-family: 'Karla', sans-serif;
-}
-
-input {
-    background: white;
-    /* rgb(71, 64, 64);*/
-    color: black;
-    font-family: 'Grape Nuts', cursive;
-    font-family: 'IBM Plex Sans Arabic', sans-serif;
-    font-family: 'Karla', sans-serif;
-    font-size: 12pt;
-}
-
-/*Startseite*/
-.responsive-img {
-    width: 100%;
-
-
-}
-
-#text-position {
-    width: 50%;
-    height: auto;
-    position: left;
-}
-
-details {
-    border: 1px solid #aaa;
-    border-radius: 4px;
-    padding: .5em .5em 0;
-}
-
-summary {
-    color: rgb(201, 180, 180);
-    font-weight: bold;
-    margin: -.5em -.5em 0;
-    padding: .5em;
-}
-
-details[open] {
-    padding: .5em;
-}
-
-details[open] summary {
-    border-bottom: 1px solid #aaa;
-    margin-bottom: .5em;
-}
-
-#kat:visited {
-    color: pink;
-}
-
-#kat {
-    color: whitesmoke;
-    font-family: 'Grape Nuts', cursive;
-    font-family: 'IBM Plex Sans Arabic', sans-serif;
-    font-family: 'Karla', sans-serif;
-    font-style: italic;
-}
-
-/* Suche nach Produkt */
 * {
     box-sizing: border-box;
-}
-
-#myInput {
-    background-image: url('/css/searchicon.png');
-    /* Add a search icon to input */
-    background-position: 10px 12px;
-    /* Position the search icon */
-    background-repeat: no-repeat;
-    /* Do not repeat the icon image */
-    width: 100%;
-    /* Full-width */
-    font-size: 16px;
-    /* Increase font-size */
-    padding: 12px 20px 12px 40px;
-    /* Add some padding */
-    border: 1px solid #ddd;
-    /* Add a grey border */
-    margin-bottom: 12px;
-    /* Add some space below the input */
-}
-
-
-
-
-
-
-
-
-/*Unterkategorien-Seiten*/
-
-
-
-.unterseite-kategorie {
-    color: rgb(181, 160, 160);
-    font-family: 'Grape Nuts', cursive;
-    font-family: 'IBM Plex Sans Arabic', sans-serif;
-    text-align: center;
-}
-
-#aBisZ {
-    margin: 5%;
-    font-weight: bold;
-    color: rgb(181, 160, 160);
-    align-content: flex-start;
-    font-family: 'Grape Nuts', cursive;
-    font-family: 'IBM Plex Sans Arabic', sans-serif;
-    font-family: 'Karla', sans-serif;
-
-}
-
-/* trial */
-.wrapper {
-    padding: 5px;
-    max-width: 960px;
-    width: 90%;
-    margin: 20px auto;
-    display: inline;
-}
-
-.columns {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin: 5px 0;
-}
-
-.column {
-    flex: 1;
-    border: 1px solid #666;
-    margin: 2px;
-    padding: 10px;
-    background: #6AAB95;
-    transition: 0.3s;
-}
-
-
-
-
-/* old */
-.flex-in-grid {
-    display: flexbox;
-    border-bottom: 5px;
-}
-
-.grid-container {
-    /* background-color:#ffdbdb; */
-    padding: 20px;
-    margin: auto;
-    height: auto;
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 30%;
-    justify-content: center;
-    grid-gap: 20px 20px;
-
-}
-
-
-
-/* hiding der Checkboxen auf obst.html */
-#title2 {
-    display: none;
-}
-
-
-div.column.content {
-    display: inline-block;
-}
-
-
-
-
-.wrapper section label {
-    display: inline-block;
-    padding: 5% 10%;
-    /* padding: 30px 22px; */
-    margin: 0 0 1px 0;
-    cursor: pointer;
-    background: #6AAB95;
-    border-radius: 3px;
-    color: #FFF;
-    transition: ease .5s;
-    align-self: center;
-    text-align: center;
-
-}
-
-label:hover {
-    background: #4E8774;
-}
-
-.quantity-display {
-    background-color: #4E8774;
-    text-align: start;
-    transform: none;
-    cursor: default;
-
-}
-
-.content {
-    /* background: #A7A7A7; */
-    text-align:left;
-    padding: 10px 25px;
-    /* border: 1px solid #A7A7A7; */
-    margin: 0 0 1px 0;
-    border-radius: 3px;
-
-}
-
-.content p {
-    background: #4E8774;
-    padding: 10px 25px;;
-    margin: 0 0 1px 0;
-    border-radius: 3px;
-}
-
-input+label+.content {
-    display: none;
-
-}
-
-input:checked+label+.content {
-    display: block;
-
-}
-
-
-
-
-
-ul li a {
-    color: whitesmoke;
-    font-family: 'Grape Nuts', cursive;
-    font-family: 'IBM Plex Sans Arabic', sans-serif;
-    font-family: 'Karla', sans-serif;
-}
-
-
-
-
-
-
-/*Nebenseiten*/
-.backToMain {
-    color: black;
-    font-family: 'Grape Nuts', cursive;
-    font-family: 'IBM Plex Sans Arabic', sans-serif;
-    font-family: 'Karla', sans-serif;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-    display: inline-block;
-    width: fit-content;
-    background-color: rgb(161, 140, 140);
-    padding: 10px;
-    transition: background-color 0s, padding 0s ease;
-}
-
-.backToMain:hover {
-    background: radial-gradient(rgb(140, 120, 120), rgb(255, 214, 221));
+  
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
     padding: 15px;
-}
-
-/* Meine Listen */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
-* {
+  }
+  
+  html {
+    font-family: "Lucida Sans", sans-serif;
+  }
+  
+  .header {
+    background-color: rgb(126, 191, 113);
+    color: rgb(76, 115, 68);
+    padding: 15px;
+  }
+  
+  .home-body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    z-index: -1;
+    background-image: url("/img/mall.jpg");
+  }
+  
+  /* .home-body {
+         
+    } */
+  
+  
+  
+  .menu ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-.contentNewList {
-    
-}
-
-
-
-
-/*Einzelne Rezepte*/
-ol li {
-    color: whitesmoke;
-    font-family: 'Grape Nuts', cursive;
-    font-family: 'IBM Plex Sans Arabic', sans-serif;
-    font-family: 'Karla', sans-serif;
-
-}
-
-.rezeptBild {
-    position: relative;
-    left: 5%;
-}
-
-#bestätigen:hover {
-    color: black;
-    font-weight: bold;
-    background: rgb(161, 140, 140);
-}
-
-.rezept-div {
+  }
+  
+  .menu li {
+    padding: 8px;
+    margin-bottom: 7px;
     background-color: rgb(71, 64, 64);
-    width: 90%;
-    border: 2px solid whitesmoke;
-    padding: 5px;
-    margin: 10px;
-
-    color: whitesmoke;
-    font-family: 'Grape Nuts', cursive;
-    font-family: 'IBM Plex Sans Arabic', sans-serif;
-    font-family: 'Karla', sans-serif;
-}
-
-
-/* Buttons */
-.button-kategorien {
-    position: relative;
-    width: 90%;
-    text-align: left;
-    background-color: rgb(71, 64, 64);
-    border: 2px ridge whitesmoke;
-    border-radius: 20px;
-    color: whitesmoke;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 14px;
-    padding: 10px;
-    line-height: 25px;
-
-}
-
-/*Akkordeon-Button*/
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion {
-    /*line-height vllt hinzufügen*/
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    display: inline-block;
-    padding: 18px;
-    width: 100%;
-    text-align: center;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active,
-.accordion:hover {
-    background-color: #ccc;
-}
-
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-    padding: 0 18px;
-    background-color: rgb(161, 140, 140);
-    font-size: 14px;
-    width: auto;
-    display: none;
-    overflow: hidden;
-}
-
-.button-74 {
-    background-color: #fbe4e0;
-    border: 2px solid #383232;
-    border-radius: 20px;
-    box-shadow: #383332 4px 4px 0 0;
-    color: #383232;
-    cursor: pointer;
-    display: inline-block;
-    font-weight: 550;
-    font-size: 14px;
-    padding: 0 10px;
-    line-height: 25px;
-    text-align: center;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+  
+  .menu li:hover {
+    background-color: rgb(145, 61, 92);
+  }
+  
+  a {
     text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-}
-
-.button-74:hover {
-    background-color: #ffdbdb;
-}
-
-.button-74:active {
-    box-shadow: #422800 2px 2px 0 0;
-    transform: translate(2px, 2px);
-}
-
-@media (min-width: 768px) {
-    .button-74 {
-        min-width: 120px;
-        padding: 0 25px;
+  }
+  
+  
+  .aside {
+    background-color: rgb(71, 64, 64);
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    
+  }
+  
+  .menu .einRezept {
+    margin-top: 10%;
+  }
+  
+  .menu .einRezept:hover {
+    background-color: rgb(71, 64, 64);
+  }
+  
+  .menu li button {
+    text-align: end;
+    background-color: rgb(181, 160, 160);
+    border: none;
+    margin-top: -4%;
+    margin-right: 1%;
+    float: right;
+    border-radius: 10px;
+    padding: 1% 3% 1% 3%;
+   
+    
+  } 
+  
+  .menu li button:hover {
+    background-color: rgb(145, 61, 92);
+  }
+  
+  .footer {
+    background-color: rgb(145, 61, 92);
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+    position: relative;
+  }
+  
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 600px) {
+  
+    /* For tablets: */
+    .col-s-1 {
+      width: 8.33%;
     }
-}
-
-
-
+  
+    .col-s-2 {
+      width: 16.66%;
+    }
+  
+    .col-s-3 {
+      width: 25%;
+    }
+  
+    .col-s-4 {
+      width: 33.33%;
+    }
+  
+    .col-s-5 {
+      width: 41.66%;
+    }
+  
+    .col-s-6 {
+      width: 50%;
+    }
+  
+    .col-s-7 {
+      width: 58.33%;
+    }
+  
+    .col-s-8 {
+      width: 66.66%;
+    }
+  
+    .col-s-9 {
+      width: 75%;
+    }
+  
+    .col-s-10 {
+      width: 83.33%;
+    }
+  
+    .col-s-11 {
+      width: 91.66%;
+    }
+  
+    .col-s-12 {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+  
+    /* For desktop: */
+    .col-1 {
+      width: 8.33%;
+    }
+  
+    .col-2 {
+      width: 16.66%;
+    }
+  
+    .col-3 {
+      width: 25%;
+    }
+  
+    .col-4 {
+      width: 33.33%;
+    }
+  
+    .col-5 {
+      width: 41.66%;
+    }
+  
+    .col-6 {
+      width: 50%;
+    }
+  
+    .col-7 {
+      width: 58.33%;
+    }
+  
+    .col-8 {
+      width: 66.66%;
+    }
+  
+    .col-9 {
+      width: 75%;
+    }
+  
+    .col-10 {
+      width: 83.33%;
+    }
+  
+    .col-11 {
+      width: 91.66%;
+    }
+  
+    .col-12 {
+      width: 100%;
+    }
+  }
+  
+  #cat-h2 {
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 35pt;
+    background-color: rgb(98, 148, 87);
+  
+  
+  }
+  
+  .categories {
+    list-style-type: none;
+  }
+  
+  .categories li button {
+    margin: 0.5%;
+    padding: 2%;
+    border-radius: 1em;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    color: white;
+    background-color: rgb(126, 191, 113);
+    font-size: 13pt;
+  }
+  
+  .categories li button:hover {
+    background-color: rgb(98, 148, 87);
+  
+  }
+  
+  .einRezept button {
+    background-color: red;
+    float: right;
+  }
+  
+  
+  
+  /* Einzelne Kategorien */
+  .products-background {
+    background-color: white;
+    font-family: "Lucida Sans", sans-serif;
+    text-decoration: none;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .grid-column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    cursor: pointer;
+  
+  }
+  
+  /* Clear floats after the columns */
+  .grid-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .grid-column {
+      width: 100%;
+    }
+  }
+  
+  details>summary {
+    list-style: none;
+  }
+  
+  details>summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  .details-example {
+    background-color: rgb(126, 191, 113);
+  }
+  
+  
+  
+  
+  .details-example summary {
+    text-align: center;
+    padding-top: 10%;
+    margin-bottom: 10%;
+    background-color: rgb(126, 191, 113);
+  }
+  
+  .details-example:hover,
+  summary:hover {
+    background-color: rgb(98, 148, 87);
+  }
+  
+  .grid-content {
+    list-style-type: none;
+    background-color: rgb(126, 191, 113);
+    cursor: default;
+  }
+  
+  .add-button {
+    background-color: rgb(98, 148, 87);
+    color: white;
+    border-style: none;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    cursor: pointer;
+  }
+  
+  .add-button:hover {
+    background-color: rgb(76, 115, 68);
+  }
+  
+  .sub-category {
+    Color: rgb(76, 115, 68);
+    font-weight: bold;
+    margin-bottom: 5px;
+    cursor: default;
+  }
+  
+  /* Recipes and Inspirations */
+  .recipe-inspo {
+    text-align: center;
+    background-color: white;
+  }
+  
+  .recipe-inspo h1 {
+    background-color: rgb(145, 61, 92);
+    position: relative;
+  }
+  
+  .getRecipe {
+    position:relative; 
+    left:0%; 
+    top:70px;
+    background-color: white;
+    padding: 2% 86% 12% 2%;
+    align-items: center;
+  }
+  
+  .getRecipe-button {
+    align-items: center;
+    left: 30%;
+    background-color: rgb(163, 227, 150);
+    position:absolute;
+    padding: 1% 2% 1% 2%;
+    border-radius: 20px;
+  }
+  
+  .getRecipe-button:hover {
+    background-color: rgb(126, 191, 113);
+  }
+  
+  
+  
+  
+  
+  /* Single recipe */
+  .recipe-heading h1 {
+    background-color: rgb(145, 61, 92);
+    color: #ffffff;
+    padding: 1% 2% 2% 1%;
+    text-align: center;
+    margin-bottom: 0%;
+  }
+  
+  .recipe-heading {
+    background-color: black;
+    margin-bottom: 0%;
+  }
+  
+  .rezeptBild {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -10%;
+    width: 80%;
+  }
+  
+  .einRezept {
+    background-color: #ffffff;
+    margin-top: 0%;
+    padding: 0% 2% 2% 2%;
+  }
+  
+  .einRezept h2,
+  h3 {
+    background-color: rgb(98, 148, 87);
+    padding: 1% 1% 1% 1%;
+    margin: auto;
+    width: 104%;
+    position: relative;
+    left: -2%;
+    color: rgb(163, 227, 150);
+  
+  }
+  
+  .rezept-div table {
+    margin-left: 2%;
+    width: 40%;
+  }
+  
+  
+  
+  #portions {
+    padding: 3% 1% 2% 1%;
+    margin-left: 2%;
+  }
+  
+  .rezept-preparation {
+    display: block;
+    margin-right: 10%;
+    margin-left: 2%;
+  }
+  
+  /* Heart-Button */
+  .buttonmove {
+    position: relative;
+    width: 900px;
+    overflow: hidden;
+    clear: both;
+    margin-bottom: -10%;
+  }
+  
+  #like-button {
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+    font-size: 1.5em;
+    font-family: 'Heebo', sans-serif;
+    background-color: transparent;
+    border: 0.1em solid;
+    border-radius: 1em;
+    padding: 0.333em 1em 0.25em;
+    line-height: 1.2em;
+    box-shadow: 0 0.25em 1em -0.25em;
+    cursor: pointer;
+    transition: color 150ms ease-in-out, background-color 150ms ease-in-out, transform 150ms ease-in-out;
+    outline: 0;
+    margin: 5em 0;
+  
+  }
+  
+  
+  #like-button:hover {
+    color: rgb(196, 55, 83);
+  }
+  
+  #like-button:active {
+    transform: scale(0.95);
+  }
+  
+  #like-button.selected {
+    color: white;
+    background-color: rgb(196, 55, 83);
+    border-color: rgb(196, 55, 83);
+  }
+  
+  .heart-icon {
+    display: inline-block;
+    fill: currentColor;
+    width: 0.8em;
+    height: 0.8em;
+    margin-right: 0.2em;
+    overflow: hidden;
+  
+  }
+  
+  
+  
+  /* add List */
+  .css-addlist {
+    background-color: white;
+    padding: 2% 1% 1% 2%;
+  }
+  
+  
+  
+  .contentNewList label {
+    padding: 1% 1% 1% 1%;
+  }
+  
+  .contentNewList input {
+    display: block;
+    margin : 0 auto;
+    border-radius: 20px;
+    padding: 1% 1% 1% 1%;
+  
+  }
+  
+  .frame {
+    background-color: rgb(126, 191, 113);
+    padding-bottom: 2%;
+  }
+  
+  .frame h3 {
+    background-color: rgb(76, 115, 68);
+    text-align: center;
+    width: 103.1%;
+    left: -2.1%;
+  }
+  
+  .frame h4 {
+    background-color: rgb(163, 227, 150);
+    text-align: center;
+    padding: 1% 1% 1% 1%;
+  }
+  
+  .saveListButton, #addListButton {
+  
+    display: block;
+    margin : 0 auto;
+    padding: 1% 3% 1% 3%;
+    border-radius: 20px;
+    margin-bottom: 1%;
+    background-color: rgb(145, 61, 92);
+    color: white;
+    font-size: large;
+  
+  }
+  
