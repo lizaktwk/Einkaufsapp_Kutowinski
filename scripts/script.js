@@ -3,7 +3,37 @@
 new Script();
 console.log("started")
 function Script() {
-    let list = ["apfel", "banane", "erdbeere", "erdapfel"];
+    let list = ["Apples", "Apricot", "Artichokes", "Arugula", "Asparagus", "Avocado", "Bananas", "Basil", "Beets",
+    "Bell pepper", "Berries", "Blackberries", "Blueberries", "Broccoli", "Cabbage", "Carrots", "Cauliflower", "Celery", "Cherries",
+    "Chives", "Cilantro", "Cranberries", "Cucumber", "Dates", "Eggplant", "Fennel", "Figs", "Garlic", "Ginger", "Grapefruit", "Grapes",
+    "Herbs", "Kiwis", "Leek", "Lemon", "Lettuce", "Lime", "Mandarins", "Mango", "Melon", "Mint", "Mushrooms", "Nectarine", "Olives",
+    "Onions", "Orange", "Parsley", "Passion fruit", "Peach", "Pears", "Peas", "Pineapple", "Poatatoes", "Prunes", "Radish", "Rhubarb",
+    "Sage", "Salad", "Scallions", "Spinach", "Squash", "Strawberries", "Sun dried tomatoes", "Sweet corn", "Sweet potatoes", "Thyme",
+    "Tomatoes", "Watermelon", "Zucchini","Bagels", "Baguette", "Bread", "Buns", "Crispbread", "Croissant", "Dinner Rolls", "Donuts", "Muffins", "Pancakes mix", "Pie",
+	"Pizza dough", "Puff pastry", "Rolls", "Scones", "Sliced Bread", "Toast", "Tortillas", "Waffles", "Blue Cheese", "Butter", "Cheddar", "Cheese", "Cottage Cheese", "Cream", "Cream cheese", "Creme fraiche", "Eggs", "Feta", "Gorgonzola",
+	"Grated cheese", "Margarine", "Mascarpone", "Milk", "Mozzarella", "Parmesan", "Quark", "Ricotta", "Sour cream", "Soy Milk", "Yogurt",
+    "Anchovies", "Bacon", "Beef", "Bratwurst", "Chicken", "Chicken breast", "Cold cuts", "Fish", "Ground meat", "Ham", "Hot Dog",
+	"Lamb", "Lobster", "Meat", "Mussels", "Oysters", "Pork", "Prosciutoo", "Salami", "Salmon", "Sausage", "Shrimp", "Sliced beef",
+	"Steak", "Tuna", "Turkey", "Turkey breast", "Veal", "Almonds", "Apple sauce", "Baking powder", "Baking soda", "Balsamic vinegar", "BBQ sauce", "Beans", "Black pepper", "Breadcrumbs",
+	"Canned tomatoes", "Chutney", "Cinnamon", "Coconut Milk", "Cornbread Stuffing", "Cornflour", "Dip", "Gravy", "Hazelnuts", "Hot sauce",
+	"Icing sugar", "Ketchup", "Lentils", "Maple Syrup", "Mashed Potatoes","Mayonnaise", "Mustard", "Nuts", "Oil", "Olive oil",
+	"Oregano", "Paprika", "Pasta sauce", "Peanut butter", "Peppercorns", "Pine nuts", "Rosemary", "Salad dressing", "Salt", "Soy Sauce",
+	"Stock", "Sugar", "Tomato puree", "Tomato sauce", "Vanilla", "Vinegar", "Walnuts", "Yeast", "Baked Beans", "Burritos", "Chicken Wings", "Chinese Food", "Dumplings", "Fish sticks", "French fries", "Frozen fruits",
+	"Frozen vegetables", "Ice cream", "Indian food", "Italian food", "Lasagna", "Mexican food", "Pizza", "Soup", "Thai food",
+    "Basmati rice", "Cereal", "Chickpeas", "Corn flakes", "Couscous", "Flour", "Muesli", "Noodles", "Oatmeal", "Pasta", "Penne",
+	"Rice", "Risotto rice", "Semolina", "Spaghetti", "Tofu", "Wild rice", "Cake", "Candy", "Cereal bar", "Chewing Gum", "Chips", "Chocolate", "Cookies", "Crackers", "Dessert", "Dried fruit", "Gingerbread",
+	"Honey", "Jam", "Jello", "Marshmallows", "Nougat cream", "Peanuts", "Popcorn", "Pretzels", "Pudding", "Snacks", "Tortilla Chips",
+    "Apple juice", "Beer", "Beverages", "Bottled water", "Champagne", "Cider", "Cigarettes", "Coffee", "Coffee Beans", "Coffe Capsules",
+	"Coffee Pads", "Cola", "Diet Cola", "Diet Soda", "Energy drink", "Fruit juice", "Gin", "Ginger Ale", "Hot Chocolate", "Iced Tea",
+	"Orange juice", "Prosecco", "Red wine","Rose wine","Rum", "Smoothie", "Soda", "Spirits", "Sports drink", "Tea", "Tonic Water", "Vodka",
+	"Water", "Whiskey", "White wine", "Aluminium foil", "Baby food", "Bathroom cleaner", "Batteries", "Candles", "Cleaning supplies", "Cutlery", "Dishwasher salt",
+	"Dishwasher Tabs", "Dishwasher liquid", "Fabric softener", "Flowers", "Garbage bags", "Gift", "Glass cleaner", "Laundry detergent",
+	"Light bulb", "Napkins", "Paper towels", "Parchment paper", "Plastic wrap", "Sponge", "Toilet cleaner", "Wrapping paper", "Bandaids", "Body lotion", "Conditioner", "Contact lens solution", "Cotton pads", "Cotton swabs", "Dental floss", "Deodorant",
+	"Diapers", "Face cream", "Facial tissues", "Hair gel", "Hair spray", "Hand cream", "Insect Repellent", "Lip balm", "Makeup remover",
+	"Mouthwash", "Nail polish", "Nail polish remover","Pads", "Pain reliever","Razor", "Razor blades", "Shampoo", "Shaving cream",
+	"Soap", "Sunblock", "Tampons", "Tissues", "Toilet paper", "Toothbrush", "Toothpaste", "Vitamins", "Wet wipes", "Bird food", "Cat food", "Cat litter", "Cat treats", "Dog food", "Dog treats", "Fish food",
+    "Bolts", "Brush", "Charcoal", "Fertilizer", "Garden tool", "Grill", "Lawnmower", "Nails", "Parasol", "Plants", "Pots",
+	"Potting soil", "Propane", "Seeds", "Watering can"];
     let search = document.getElementById("search");
     search.addEventListener("keyup", predict);
     let predictionList = document.getElementById("prediction");
